@@ -1,12 +1,14 @@
 {
   "name": "ahao-translate",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "commit"
   },
   "dependencies": {
     "vue": "^3.3.4"
@@ -14,10 +16,12 @@
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/prompt-cli": "^17.7.1",
     "@commitlint/types": "^17.4.4",
     "@types/node": "^20.5.1",
     "@vitejs/plugin-vue": "^4.2.3",
     "autoprefixer": "^10.4.15",
+    "conventional-changelog-conventionalcommits": "^6.1.0",
     "husky": "^8.0.0",
     "postcss": "^8.4.28",
     "tailwindcss": "^3.3.3",
